@@ -1,0 +1,36 @@
+server ---> configuration --> web.xml
+
+where?
+WEB-INF -> web.xml 
+
+
+ servlet ---> 
+ 		backend --> serverside 
+ 				--> controller --> logic 
+ 				
+ 				
+Print  extends Thread 
+Print implements Runnable 
+
+
+InvalidEmailException extends Exception 
+
+Facebook -> singup --- fn em pwd -->submit-->XXXX -> fetch --> validate --> db server 
+
+
+
+HttpServlet -->???
+ lib --> jar --> 
+ 		1)  server - tomcat  
+ 		2)  google -> download 
+ 		
+ 		
+ 		
+ 		
+ src->main
+ 		->java
+ 			->com
+ 				->controller 
+ 					--> SignupServlet 
+ 
+ ---------------------------------------------------------------------------------------------------
