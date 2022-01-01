@@ -14,4 +14,13 @@
 	</welcome-file-list>
 
 
+	<servlet>
+		<servlet-name>SignupServlet</servlet-name>
+		<servlet-class>com.controller.SignupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignupServlet</servlet-name>
+		<url-pattern>/SignupServlet</url-pattern>
+	</servlet-mapping>
+
 </web-app>

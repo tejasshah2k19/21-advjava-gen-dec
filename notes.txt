@@ -33,4 +33,8 @@ HttpServlet -->???
  				->controller 
  					--> SignupServlet 
  
+ 
+ 1) class extends HttpServlet
+ 2) override service -->http 
+ 3) mapping of servlet into web.xml 
  ---------------------------------------------------------------------------------------------------
