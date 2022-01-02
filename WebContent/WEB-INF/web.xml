@@ -21,6 +21,52 @@
 	<servlet-mapping>
 		<servlet-name>SignupServlet</servlet-name>
 		<url-pattern>/SignupServlet</url-pattern>
+		<!-- this is comment -->
 	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdditionServlet</servlet-name>
+		<servlet-class>com.controller.AdditionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdditionServlet</servlet-name>
+		<url-pattern>/AdditionServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>PatternServlet</servlet-name>
+		<servlet-class>com.controller.PatternServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PatternServlet</servlet-name>
+		<url-pattern>/PatternServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </web-app>
