@@ -38,3 +38,43 @@ HttpServlet -->???
  2) override service -->http 
  3) mapping of servlet into web.xml 
  ---------------------------------------------------------------------------------------------------
+ 
+ validation --- back end
+ 
+ 
+ error --> java --> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ jsp --> java server pages --> java servlet pages -->
+ 
+ jsp --> html + java 
+ servlet 
+ 
+ 
+ scriptlet ===> <% %>  ==> java logic 
+ expression ===> <%=  %> => print any java variable 
+ declaration ==> <%!   %> declaration 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
