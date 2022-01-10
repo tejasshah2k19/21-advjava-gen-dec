@@ -16,13 +16,48 @@ public class RegistrationServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		String firstName = request.getParameter("firstName");
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		String gender = request.getParameter("gender");
+		
+		
+		
+		
+		
+		
 		boolean isError = false;
 
 		if (firstName == null || firstName.trim().length() == 0) {
 			isError = true;
-			request.setAttribute("firstNameError", "Please Enter FirstName");
+			request.setAttribute("firstNameError", "<font color=red>Please Enter FirstName</font>");
+		}else {
+			request.setAttribute("firstNameValue", firstName);
 		}
 
+		if (email == null || email.trim().length() == 0) {
+			isError = true;
+			request.setAttribute("emailError", "<font color=red>Please Enter Email</font>");
+		}else {
+			request.setAttribute("emailValue", email);
+		}
+
+		if (password == null || password.trim().length() == 0) {
+			isError = true;
+			request.setAttribute("passwordError", "<font color=red>Please Enter Password</font>");
+		}else{
+			request.setAttribute("passwordValue", password);
+		}
+
+		if (gender == null) {
+			isError = true;
+			request.setAttribute("genderError", "<font color=red>Please Select Gender</font>");
+		}else {
+			request.setAttribute("genderValue", gender);
+		}
+
+		
+		
+		
 		RequestDispatcher rd = null;
 		if (isError == true) {
 			// registration

@@ -46,7 +46,9 @@ HttpServlet -->???
  
  
  
- 
+ --------------------------
+ pattern -> upper and lower triangle 
+ -------------------------
  
  
  
@@ -63,8 +65,45 @@ HttpServlet -->???
  
  
  
+ --------------------------------------
+ Task:-
+ 	
+ 	Menu.jsp
+ 	
+ 	Gujarati
+ 	Punjabi
+ 	
  
- 
+ 	Gujarati 
+ 		
+ 		Roti and Subji [120] ()              ___qty____    
+ 		Rise and Dal  [110]  ()              ___qty____
+ 		
+ 	Punjabi 
+		Naan and Subji () [130 ]             __qty____
+		JeeraRise and DalTadka () [150 ]     __qty____
+		
+		
+		submit -> 
+		
+		Roti And Subji 5 qty Total -> 600  Rs 
+
+1) validation
+		
+--------------------------------------
+ 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 	
  
  
  
