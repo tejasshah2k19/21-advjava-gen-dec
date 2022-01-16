@@ -89,15 +89,30 @@ HttpServlet -->???
 		Roti And Subji 5 qty Total -> 600  Rs 
 
 1) validation
+
+--------------------------------------------------
+ when user hit website it will display index page with 2 option Gujarati or Punjabi link , user will click on any link and they get given menu 
+
+in menu page we have items and price with text box for qty -[ qty will add by user ] 
+
+once the user press submits on the next page we need to display the item that user selected and the total price.
+
+User can have either Punjabi or Gujarati. 
+
+User can select only one item from the menu.  
+
 		
 --------------------------------------
- 		
+ 
+  		
 			     Oject
 		
 		 	interface Servlet 
 		
 		abstract GenericServlet 
-		
+
+--------------------------------------
+
 	     	HttpServlet 
 		
 		
