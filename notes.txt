@@ -92,11 +92,51 @@ HttpServlet -->???
 		
 --------------------------------------
  		
+			     Oject
+		
+		 	interface Servlet 
+		
+		abstract GenericServlet 
+		
+	     	HttpServlet 
 		
 		
+--------------------------------------
+ 		
+		init()
+		service()#
+		destroy() 
+		
+		life cycle of servlet:-	
 		
 		
+		if i make 10 request of X servlet then ? 
+		how it works? 
+		how many times init service and destroy called ??
 		
+		
+		1) load class
+		2) create instance [ thread ] 
+		3) init()
+		4) service() 
+		5) destroy() 
+		
+		500 times --> then how many time object will be created ? ==> 1 [ 500 thread ] 
+		init() --> 1 
+		service() --> 500 
+		destroy() --> 0 
+--------------------------------------
+ 		
+		HT menu :- 
+		
+		Login.jsp 
+		LoginServlet
+		Menu.jsp 
+		Guj.jsp
+		Pun.jsp 
+		MenuServlet -> print bill 
+		 
+--------------------------------------
 		
 		
 		

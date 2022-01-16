@@ -32,10 +32,16 @@
 			value="<%=emailValue == null ? "" : emailValue%>"><%=emailError == null ? "" : emailError%>
 		<br> Password:<input type="password" name="password" />
 		<%=passwordError != null ? passwordError : ""%>
-		<br> Gender: Male<input type="radio" name="gender" value="male"  <%=genderValue != null && genderValue.equals("male") ? "checked" : "" %>    />
-		Female<input type="radio" name="gender" value="female" <%=genderValue != null && genderValue.equals("female") ? "checked" : "" %>  />
+		<br> Gender: Male<input type="radio" name="gender" value="male"
+			<%=genderValue != null && genderValue.equals("male") ? "checked" : ""%> />
+		Female<input type="radio" name="gender" value="female"
+			<%=genderValue != null && genderValue.equals("female") ? "checked" : ""%> />
 		<%=genderError == null ? "" : genderError%>
-		<br> <input type="submit" value="Signup" />
+
+		<br> Hobby : Cricket <input type="checkbox" name="hobby"
+			value="ckt" /> Facebook <input type="checkbox" name="hobby"
+			value="fb" /> KiteFlying <input type="checkbox" name="hobby"
+			value="kt" /> ${hobbyError } <br> <input type="submit" value="Signup" />
 
 
 	</form>

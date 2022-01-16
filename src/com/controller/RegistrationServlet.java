@@ -20,7 +20,7 @@ public class RegistrationServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		String gender = request.getParameter("gender");
 		
-		
+		String hobby[] = request.getParameterValues("hobby");
 		
 		
 		
@@ -55,7 +55,10 @@ public class RegistrationServlet extends HttpServlet {
 			request.setAttribute("genderValue", gender);
 		}
 
-		
+		if(hobby == null || hobby.length == 1) {
+			isError = true;
+			request.setAttribute("hobbyError",  "<font color=red>Please Select Atlease 2 hobby</font>");
+		}
 		
 		
 		RequestDispatcher rd = null;
