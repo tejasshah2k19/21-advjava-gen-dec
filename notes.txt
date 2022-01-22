@@ -152,8 +152,15 @@ User can select only one item from the menu.
 		MenuServlet -> print bill 
 		 
 --------------------------------------
+		Login => email --> print bill --> 
+		Logint ->   jsp | servlet -> printbill 
+		request object will not works 
 		
+		user --> backend 
+						1) cookie 
+						2) session 
 		
+		cookie --> data store --> client side --> browser side --> inside the browser 
 		
 		
 		
