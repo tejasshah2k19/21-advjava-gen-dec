@@ -23,11 +23,12 @@ public class CookieLoginServlet extends HttpServlet {
 		if (password.equals("admin")) {
 			// home
 
-			//how to set cookie in client's browser 
+			// how to set cookie in client's browser
 			Cookie c = new Cookie("email", email);
+			c.setMaxAge(60 * 60 * 24 * 7);//7days //0 
+
 			response.addCookie(c);
-			
-			
+
 			rd = request.getRequestDispatcher("CookieHome.jsp");
 		} else {
 			// login

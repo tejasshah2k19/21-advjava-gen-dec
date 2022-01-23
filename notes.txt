@@ -163,11 +163,30 @@ User can select only one item from the menu.
 		cookie --> data store --> client side --> browser side --> inside the browser 
 		
 		
+		how to set expired time in cookie? 
 		
+		editthiscookie
+--------------------------------------
 		
-		 	
+filter --> 		
+		 	Registration.jsp	
+		 			FirstName
+		 			Email
+		 			Password
+		 					[ submit ]
+ 			RegistrationFilter 
+ 					firstName email password -- validation
+ 			
  
- 
+ 			RegistrationServlet 
+ 					db insert 
+ 					home 
+ 					
+ 	1)	class implements Filter 
+ 	2)	override filter interface method  
+ 	3)  web.xml filter mapping
+ 	 
+--------------------------------------
  
  
  

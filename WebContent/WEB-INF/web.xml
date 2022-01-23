@@ -60,7 +60,15 @@
 
 
 
-
+	<filter>
+	<filter-name>RegistrationFilter</filter-name>
+	<filter-class>com.filter.RegistrationFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>RegistrationFilter</filter-name>
+		<url-pattern>/FilterRegistrationServlet</url-pattern>
+	</filter-mapping>
 
 
 
