@@ -60,17 +60,28 @@
 
 
 
-	<filter>
-	<filter-name>RegistrationFilter</filter-name>
-	<filter-class>com.filter.RegistrationFilter</filter-class>
+	<!-- <filter>
+		<filter-name>RegistrationFilter</filter-name>
+		<filter-class>com.filter.RegistrationFilter</filter-class>
 	</filter>
-	
+
 	<filter-mapping>
 		<filter-name>RegistrationFilter</filter-name>
 		<url-pattern>/FilterRegistrationServlet</url-pattern>
 	</filter-mapping>
 
+	<filter>
+		<filter-name>PasswordValidatorFilter</filter-name>
+		<filter-class>com.filter.PasswordValidatorFilter</filter-class>
+	</filter>
 
+	<filter-mapping>
+		<filter-name>PasswordValidatorFilter</filter-name>
+		<url-pattern>/FilterRegistrationServlet</url-pattern>
+		<servlet-name>FilterRegistrationServlet</servlet-name>
+	</filter-mapping>
+
+ -->
 
 
 

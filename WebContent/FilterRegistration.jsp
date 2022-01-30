@@ -25,10 +25,7 @@
 		<br> Email : <input type="text" name="email"><%=emailError == null ? "" : emailError%>
 		<br> Password:<input type="password" name="password" />
 		<%=passwordError != null ? passwordError : ""%>
-
 		<br> <input type="submit" value="Signup" />
-
-
 	</form>
 
 

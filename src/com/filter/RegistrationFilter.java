@@ -8,7 +8,9 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 
+@WebFilter("/FilterRegistrationServlet")
 public class RegistrationFilter implements Filter {
 
 	public void init(FilterConfig filterConfig) throws ServletException {
@@ -47,7 +49,7 @@ public class RegistrationFilter implements Filter {
 			request.getRequestDispatcher("FilterRegistration.jsp").forward(request, response);
 		} else {
 			// go ahed
-			chain.doFilter(request, response);// either call next filter or servlet 
+			chain.doFilter(request, response);// either call next filter or servlet
 		}
 
 	}
