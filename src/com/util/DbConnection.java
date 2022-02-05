@@ -6,8 +6,9 @@ import java.sql.SQLException;
 
 public class DbConnection {
 
-	public static void getConnection() {
+	public static Connection getConnection() {
 
+		Connection con = null; 
 		String driver = "org.postgresql.Driver";
 		String url = "jdbc:postgresql://localhost:5434/projectdefination";
 		String userName = "postgres";
@@ -18,7 +19,7 @@ public class DbConnection {
 			Class.forName(driver);
 
 			// jdbc api open connection
-			Connection con = DriverManager.getConnection(url, userName, password);
+			con = DriverManager.getConnection(url, userName, password);
 
 			if (con == null) {
 				System.out.println("db not connected");
@@ -34,11 +35,7 @@ public class DbConnection {
 			e.printStackTrace();
 		}
 
+		return con;
 	}
 
-	public static void main(String[] args) {
-
-		getConnection();
-
-	}
 }

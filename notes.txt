@@ -185,8 +185,44 @@ filter -->
  	1)	class implements Filter 
  	2)	override filter interface method  
  	3)  web.xml filter mapping
- 	 
---------------------------------------
+ 
+ multifilter - done 	 
+--------------------
+
+MVC -> model ---- bean , dao 
+	   view  ---- html jsp 
+	   controller -- servlet  
+
+dao -> data access object 
+
+
+
+project -- table 
+
+	projectId
+	title 
+	description
+	
+	
+	
+	query -->
+				Statement 
+				#PreparedStatement#  [ executeQuery{select} , executeUpdate{insert,update,delete} ] 
+				
+				CallableStatement  -> Pl/SQl --> procedure , trigger ,function 
+--------------------------
+				
+				
+				
+				
+				
+				Statement 	vs PreparedStatement 
+		
+
+------------------
+ 
+ 
+ 
  
  
  
