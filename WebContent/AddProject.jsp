@@ -14,5 +14,8 @@
 	<input type="submit" value="Add Project">
 
 </form>
+<br><br>
+
+<a href="ListProjectServlet">List Projects</a>
 </body>
 </html>

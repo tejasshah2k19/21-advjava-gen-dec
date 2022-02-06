@@ -50,4 +50,14 @@
     <servlet-name>AddProjectServlet</servlet-name>
     <url-pattern>/AddProjectServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListProjectServlet</display-name>
+    <servlet-name>ListProjectServlet</servlet-name>
+    <servlet-class>com.controller.ListProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListProjectServlet</servlet-name>
+    <url-pattern>/ListProjectServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
