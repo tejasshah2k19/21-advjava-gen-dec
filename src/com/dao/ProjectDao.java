@@ -32,7 +32,7 @@ public class ProjectDao {
 
 	public ArrayList<ProjectBean> getAllProjects() {
 
-		ArrayList<ProjectBean> projects = new ArrayList<>();//null 
+		ArrayList<ProjectBean> projects = new ArrayList<>();// null
 		try {
 
 			Connection con = DbConnection.getConnection();
@@ -64,7 +64,60 @@ public class ProjectDao {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return projects;//size ->  0 
+		return projects;// size -> 0
 	}
 
+	public void deleteProject(int projectId) {
+
+		try (Connection con = DbConnection.getConnection();
+				PreparedStatement pstmt = con.prepareStatement("delete from project where projectid = ? ");
+
+		) {
+
+			pstmt.setInt(1, projectId);
+			int r = pstmt.executeUpdate();
+			System.out.println(r + " record deleted....");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public ArrayList<ProjectBean> searchProjec(String searchName) {
+
+		ArrayList<ProjectBean> projects = new ArrayList<>();// null
+		try {
+
+			Connection con = DbConnection.getConnection();
+			PreparedStatement pstmt = con.prepareStatement("select * from project where title like ?");
+			pstmt.setString(1, searchName + "%");
+
+			ResultSet rs = pstmt.executeQuery();// 3
+
+			// rs --> ????
+
+//			rs.next(); // true --> jump to the nextRecord --> first
+//			rs.next(); // true
+//			rs.next();// true
+//			rs.next();// false
+
+			while (rs.next()) {
+				// 1st record
+				// extract
+				int projectId = rs.getInt("projectid");
+				String title = rs.getString("title");
+				String description = rs.getString("description");
+
+				ProjectBean project = new ProjectBean();
+				project.setProjectId(projectId);
+				project.setTitle(title);
+				project.setDescription(description);
+				projects.add(project);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return projects;// size -> 0
+	}
 }

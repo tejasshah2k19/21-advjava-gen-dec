@@ -5,7 +5,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>List Projects</title>
+<title>Search Result  -  Projects</title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 
 
 	<br><br>
-	<a href="AddProject.jsp">Add Project</a> | <a href="SearchProject.jsp">Search Project</a>
+	<a href="AddProject.jsp">Add Project</a> | <a href="ListProjectServlet">List Projects</a>
 	<br><bR>
 
 	<%

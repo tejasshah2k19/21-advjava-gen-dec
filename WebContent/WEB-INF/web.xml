@@ -60,4 +60,24 @@
     <servlet-name>ListProjectServlet</servlet-name>
     <url-pattern>/ListProjectServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteProjectServlet</display-name>
+    <servlet-name>DeleteProjectServlet</servlet-name>
+    <servlet-class>com.controller.DeleteProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProjectServlet</servlet-name>
+    <url-pattern>/DeleteProjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchProjectServlet</display-name>
+    <servlet-name>SearchProjectServlet</servlet-name>
+    <servlet-class>com.controller.SearchProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchProjectServlet</servlet-name>
+    <url-pattern>/SearchProjectServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
