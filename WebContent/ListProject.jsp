@@ -45,7 +45,11 @@
 			<td><%=p.getProjectId()%></td>
 			<td><%=p.getTitle()%></td>
 			<td><%=p.getDescription()%></td>
-			<td><a href="DeleteProjectServlet?projectId=<%=p.getProjectId()%>"> Delete</a></td>
+			<td><a href="DeleteProjectServlet?projectId=<%=p.getProjectId()%>"> Delete</a>
+			|
+			<a href="EditProjectServlet?projectId=<%=p.getProjectId()%>"> Edit </a>
+			</td>
+		
 		</tr>
 		<%
 			}

@@ -120,4 +120,49 @@ public class ProjectDao {
 		}
 		return projects;// size -> 0
 	}
+
+	public ProjectBean getProjectById(int projectId) {
+		ProjectBean project = new ProjectBean();
+
+		try {
+
+			Connection con = DbConnection.getConnection();
+			PreparedStatement pstmt = con.prepareStatement("select * from project where projectid = ? ");
+			pstmt.setInt(1, projectId);
+
+			ResultSet rs = pstmt.executeQuery();// 3
+
+			while (rs.next()) {
+				// 1st record
+				// extract
+				String title = rs.getString("title");
+				String description = rs.getString("description");
+
+				project.setProjectId(projectId);
+				project.setTitle(title);
+				project.setDescription(description);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return project;// size -> 0
+	}
+
+	public void updateProject(ProjectBean project) {
+		try (Connection con = DbConnection.getConnection();
+				PreparedStatement pstmt = con
+						.prepareStatement("update project set title = ? , description = ? where projectid = ? ");) {
+
+			pstmt.setString(1, project.getTitle());
+			pstmt.setString(2, project.getDescription());
+			pstmt.setInt(3, project.getProjectId());
+			
+			pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 }

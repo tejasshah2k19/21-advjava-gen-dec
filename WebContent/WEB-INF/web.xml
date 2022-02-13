@@ -80,4 +80,24 @@
     <servlet-name>SearchProjectServlet</servlet-name>
     <url-pattern>/SearchProjectServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditProjectServlet</display-name>
+    <servlet-name>EditProjectServlet</servlet-name>
+    <servlet-class>com.controller.EditProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditProjectServlet</servlet-name>
+    <url-pattern>/EditProjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateProjectServlet</display-name>
+    <servlet-name>UpdateProjectServlet</servlet-name>
+    <servlet-class>com.controller.UpdateProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProjectServlet</servlet-name>
+    <url-pattern>/UpdateProjectServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
