@@ -213,21 +213,36 @@ project -- table
 --------------------------
 				
 				
-				
-				
-				
 				Statement 	vs PreparedStatement 
+				
+				compile --> path --> 
+				
+				insert 
+				select 
+				update 
+				delete 
 		
 
 ------------------
  
+ 	
+ 	storage --> email name --> print jsp 
+ 	
+ 				cookie --> browser 
+ 				session --> server memory 
  
+ you can't create session --> session is created by server 
  
+ when ? --> first request --> 			[session] 
  
+--------------------------
  
+ page --> single page 
+ request --> one page to another page 
+ session --> available to all pages but for every user it is independent [ like instance variable ] 
+ application --> available to all pages and also single copy for all users [ like static variable ] 
  
- 
- 
+--------------------------
  
  
  
