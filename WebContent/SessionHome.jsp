@@ -12,5 +12,8 @@
 	<%=session.getAttribute("email")%>
 	<br>
 	<br> ${sessionScope.email}
+
+		<br>
+		<a href="SessionLogoutServlet">Logout</a>
 </body>
 </html>

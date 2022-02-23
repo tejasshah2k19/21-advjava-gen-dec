@@ -15,14 +15,14 @@ public class SessionLoginServlet extends HttpServlet {
 	
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
-		
+		//17 
 		//true 
 		
 		//session - email 
 		
 		HttpSession session =   request.getSession();
 		session.setAttribute("email", email);//set email in user's session 
-		
+		session.setMaxInactiveInterval(60*17);//seconds 
 		response.sendRedirect("SessionHome.jsp");
 		
 	
