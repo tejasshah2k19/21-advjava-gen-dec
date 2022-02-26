@@ -126,4 +126,20 @@
 	</session-config>
 
 
+
+
+
+
+
+
+ <listener>
+ 	<listener-class>com.listener.UserCounter</listener-class>
+ </listener>
+
+
+
+
+
+
+
 </web-app>

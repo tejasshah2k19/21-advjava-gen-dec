@@ -245,6 +245,30 @@ project -- table
 --------------------------
  
  
+ listener --> it will use to listen events 
+		when we wants to perform some task on based on events 
+		e.g click event in java script.
+
+ 
+ server start ---> logs 
+ server shutdown --> logs 
+ 
+ site --> session --> action 
+ 		logtout ---> action 
+ 		
+ 
+db connection open 
+ 
+list --> server start --> open  | close 
+events --> 
+
+Listener interfaces 
+
+
+
+ 
+ 
+ 
  
  
  
