@@ -1,0 +1,78 @@
+role
+roleid			int			pk
+rolename		varchar
+
+
+user
+userid			int			pk
+firstname
+lastname
+email
+password
+gender			char(1)		M or F 
+contactNumber
+dob
+createdAt 
+roleid			int			fk
+isSubscribed	int			0 or 1 
+
+user_measurement 
+userid 
+height
+weight 
+bmi
+measurementDate 
+measurementBY		int		fk : user 
+duration 
+
+subscription
+subscriptionid
+title			monthly , q ,  h ,yearly  
+duration 	    30		  90   180	360	 
+offer			5% 10% 
+offerDescription  Val offer till 28th Feb 
+price			int 
+
+
+
+user_subscription
+user_sub_id				int 			pk
+userid					int				fk : user 
+subscritionid			int				fk : subscription
+pay						int	
+subscribeDate			date 
+paymentRefCode			varchar 
+ 
+
+diet 
+dietId
+title
+description
+userid 									fk : user 
+
+
+
+user_diet 
+userdietid							pk 
+userid								fk:user
+dietid								fk:diet
+isActive							0 or 1 
+assignDate	
+revokeDate	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+stack overflow :- 
+
+
+role 
+roleid 		intger		pk
+rolename 	varchar 
+[ admin , user  ]
+
+
+user
+userid
+firstname
+lastname
+gender
+email
+password
+createdAt 
+roleid			fk	 
+
+
+
+badges 
+badgeid
+badgename 
+ 
+
+user_badge 
+user_badge_id		pk	
+userid				fk
+badgeid				fk
+
+
+
+questions 
+questionid			pk
+userid				fk
+title				varchar 
+description			varchar 
+isSolved			int 0 or 1 
+
+
+answers
+answerid			pk
+questionid			fk
+userid				fk 
+answers				varchar
+url					varchar
+upvote				int
+downvote			int
+isAccepted			int 0 or 1 
+
+
+---meetups----
+
+
+
+
+
+
+
+
+
+
+
