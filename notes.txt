@@ -264,10 +264,15 @@ events -->
 
 Listener interfaces 
 
+----------------------------------------------
 
 
+ single admin --> no db --> email,password
  
+ value --> servlet --> LoginServlet 
  
+ ServletConfig --> servlet specific 
+ ServletContext --> all servlet 
  
  
  

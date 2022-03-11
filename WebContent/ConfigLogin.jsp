@@ -3,21 +3,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" href="css/mystyle.css">
-
 </head>
 <body>
 
-<form action="AddProjectServlet">
+	<form action="ConfigLoginServlet" method="post">
+		Email : <input type="text" name="email" /><br>
+		<br> Password : <input type="password" name="password" /><br>
+		<input type="submit" value="Login" />
 
-	Title : 	<input type="text" name="title"/><br><br> 
-	Description : <input type="text" name="description" /><br><br> 
-	
-	<input type="submit" value="Add Project">
 
-</form>
-<br><br>
+	</form>
+	${error}
 
-<a href="ListProjectServlet">List Projects</a>
 </body>
 </html>
