@@ -275,6 +275,44 @@ Listener interfaces
  ServletContext --> all servlet 
  
  
+----------------------------------------------
+
+
+
+jstl 
+
+1 add jstl jar 
+2 uri -> jsp use 
+
+
+
+<c:XXX> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
  
