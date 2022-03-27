@@ -287,6 +287,63 @@ jstl
 
 
 <c:XXX> 
+----------------------------------------------
+<b>
+<i>
+<u> 
+
+
+
+<greet></greet> 
+
+Date d = new Date();
+
+int  h = d.getHours() 
+
+
+if(h >= 0 && h <= 11 ){
+	
+}
+
+
+
+custom tag -->developer define 
+
+
+1)	simple tag [ less code , limited functionality] 
+2)	classic tag [ N interfaces ] 
+
+Simple Tag 
+	1)	tag handler class ==> logic 
+	2)	tag lib descriptor --> .tld [ tag mapping ]  [ WEB-INF]
+	3)	map .tld -> web.xml 
+	4)  jsp -> import--> use <%@ taglib %>
+	
+
+GreetTag -> no body content, no attribute
+			<greet></greet>  
+		 -> no body content , attribute 
+			<sqr num="2"></sqr>
+			<sqr num="${x}"></sqr>
+			<sqr num="<%=x%>"></sqr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

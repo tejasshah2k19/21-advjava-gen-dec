@@ -148,7 +148,7 @@
 			<param-name>email</param-name>
 			<param-value>admin@gmail.com</param-value>
 		</init-param>
-		
+
 		<init-param>
 			<param-name>password</param-name>
 			<param-value>admin123</param-value>
@@ -166,15 +166,20 @@
 		<param-value>masterPassword</param-value>
 	</context-param>
 
-	
- 
+
+
 
 	<servlet-mapping>
 		<servlet-name>ConfigLoginServlet</servlet-name>
 		<url-pattern>/ConfigLoginServlet</url-pattern>
 	</servlet-mapping>
 
-
+	<jsp-config>
+		<taglib>
+			<taglib-uri>stag</taglib-uri>
+			<taglib-location>/WEB-INF/stag.tld</taglib-location>
+		</taglib>
+	</jsp-config>
 
 
 </web-app>
