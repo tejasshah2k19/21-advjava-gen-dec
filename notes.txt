@@ -313,7 +313,7 @@ custom tag -->developer define
 1)	simple tag [ less code , limited functionality] 
 2)	classic tag [ N interfaces ] 
 
-Simple Tag 
+Simple Tag  [ implements SimpleTag,  extends SimpleTagSupport ] 
 	1)	tag handler class ==> logic 
 	2)	tag lib descriptor --> .tld [ tag mapping ]  [ WEB-INF]
 	3)	map .tld -> web.xml 
@@ -328,12 +328,43 @@ GreetTag -> no body content, no attribute
 			<sqr num="<%=x%>"></sqr>
 
 
+                                 
 
 
 
+classic Tag -->
+		no body no attribute 
+		
+		<regi></regi> 
+		
+		(c) copy - R L 2000-23
+		
+		
+		facebook   
+						messages | content 
+
+	1)	tag handler class ==> logic  [ implmenets Tag, extends TagSupport ] 
+	2)	tag lib descriptor --> .tld [ tag mapping ]  [ WEB-INF]
+	3)	map .tld -> web.xml 
+	4)  jsp -> import--> use <%@ taglib %>
+	
+	Tag 
+	IternationTag 
+	BodyTag 
+	<b>Royal</b> 	
+	
+	<s  char="a">Royaleducation </s> 
 
 
 
+<print count="3">Royal</print> 
+
+Royal
+Royal
+Royal 
+
+IternationTag
+ 
 
 
 

@@ -14,12 +14,13 @@
 		<s:greet />
 	</div>
 	<br>
-	<s:sqr num="5"/>
+	<s:sqr num="5" />
 
 	<br>
-	<s:sqr num="10"/>
+	<s:sqr num="10" />
+	<br>
 	
-	
-	   
+
+
 </body>
 </html>

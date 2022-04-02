@@ -1,0 +1,25 @@
+<taglib>
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+
+
+	<tag>
+		<name>copy</name>
+		<tag-class>com.ctag.CopyTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+
+	<tag>
+		<name>print</name>
+		<tag-class>com.ctag.PrintTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>count</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
+
+
