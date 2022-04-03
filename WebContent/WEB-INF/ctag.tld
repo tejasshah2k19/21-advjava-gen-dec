@@ -20,6 +20,12 @@
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 	</tag>
+	
+	<tag>
+		<name>red</name>
+		<tag-class>com.ctag.RedTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
 </taglib>
 
 

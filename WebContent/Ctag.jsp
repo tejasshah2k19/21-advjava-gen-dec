@@ -17,5 +17,8 @@
 	
 	
 	<c:print count="5">ROYAL<br></c:print>
+	
+	<br>
+	<c:red>Royaleducation</c:red>
 </body>
 </html>
